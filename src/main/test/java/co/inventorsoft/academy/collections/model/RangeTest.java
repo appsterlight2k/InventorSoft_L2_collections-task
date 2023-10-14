@@ -27,8 +27,8 @@ public class RangeTest {
         Range<Integer> integerRange = Range.of(1, 10);
         assertFalse(integerRange.isEmpty());
 
-        Range<Integer> emptyRange = Range.of(1, 1);
-        assertTrue(emptyRange.isEmpty());
+        Range<Integer> nonEmptyRange = Range.of(1, 1);
+        assertFalse(nonEmptyRange.isEmpty());
     }
 
     @Test
